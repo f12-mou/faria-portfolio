@@ -30,7 +30,8 @@ export const items: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'Book Recommendation System',
 		period: {
-			from: new Date(2024, 12, 20)
+			from: new Date(2024, 11, 20),
+			to: new Date(2024, 11, 20)
 		},
 		skills: [],
 		type: 'CSE 472 ML Project',
