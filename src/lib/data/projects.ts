@@ -11,12 +11,12 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
 		links: [{ to: 'https://github.com/f12-mou/pixelshare', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.Svelte,
 		name: 'PixelShare',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'CLIP'),
+		skills: getSkills('svelte', 'ts', 'js', 'css'),
 		type: 'Level 4 Term I Software Development Project'
 	},
 	{
@@ -27,7 +27,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
+		logo: Assets.Unknown,
 		name: 'Slick Portfolio',
 		period: {
 			from: new Date()
