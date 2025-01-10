@@ -3,29 +3,42 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
+		degree: 'Computer Science and Engineering',
+		description: 'CGPA(till now): 3.96/4.00',
+		location: 'Dhaka, Bangladesh',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'Bangladesh University of Engineering and Technology (BUET)',
+		period: { from: new Date(2020, 2, 22), to: new Date(2025, 1, 10) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: ['DSA', 'Database', 'Web Development', 'SWE', 'Machine Learning', 'Compiler', 'Concrete Math', 'Discrete Math', 'Programming Languages', 'OOP', 'Network and Security']
 	},
 	{
-		degree: 'PhD of Computer Science',
-		description: '',
-		location: 'USA',
+		degree: 'Higher Secondary School Certificate',
+		description: 'GPA: 5.00/5.00',
+		location: 'Dhaka, Bangladesh',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Holy Cross College',
+		period: { from: new Date(2017, 7, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		subjects: ['Science']
+	},
+	{
+		degree: 'Secondary School Certificate',
+		description: 'GPA: 5.00/5.00',
+		location: 'Manikganj, Bangladesh',
+		logo: Assets.Unknown,
+		name: '',
+		organization: 'S. K. Govt. Girls High School, Manikganj',
+		period: { from: new Date(2009, 1, 1) },
+		shortDescription: '',
+		slug: 'dummy-education-item-2',
+		subjects: ['Science']
 	}
+
 ];
 
-export const title = 'Education';
+export const title = 'Educational Background';
