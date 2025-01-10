@@ -23,17 +23,17 @@ export const items: Array<Project> = [
 		slug: 'slick-portfolio-svelte',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'This project is done under the course CSE 472 - Machine Learning  Sessional. We are developing a book recommendation system enhancing the Neural Graph Collaborative Filtering(NGCF) model with neighborhood-based contrastive learning and graph attention mechanism. The experiments are done on the Gowalla and Amazon book datasets to improve the metrics ndcg@k and recall@k.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'This project is done under the course CSE 472 - Machine Learning  Sessional. We are developing a book recommendation system enhancing the Neural Graph Collaborative Filtering(NGCF) model with neighborhood-based contrastive learning and graph attention mechanism. The experiments are done on the Gowalla and Amazon book datasets to improve the metrics ndcg@k and recall@k.',
+		links: [{ to: 'https://github.com/f12-mou/CSE-472_Book_Recommendation_System', label: 'GitHub' }],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'Book Recommendation System',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: [],
+		type: 'CSE 472 ML Project',
 		screenshots: [
 			{
 				label: 'screen 1',
