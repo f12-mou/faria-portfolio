@@ -7,17 +7,17 @@ export const items: Array<Project> = [
 		slug: 'slick-portfolio-angular',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
+		links: [{ to: 'https://github.com/f12-mou/pixelshare', label: 'GitHub' }],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'PixelShare',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('svelte', 'ts', 'tailwind', 'CLIP'),
+		type: 'Level 4 Term I Software Development Project'
 	},
 	{
 		slug: 'slick-portfolio-svelte',

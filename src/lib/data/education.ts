@@ -12,7 +12,7 @@ export const items: Array<Education> = [
 		period: { from: new Date(2020, 2, 22), to: new Date(2025, 1, 10) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['DSA', 'Database', 'Web Development', 'SWE', 'Machine Learning', 'Compiler', 'Concrete Math', 'Discrete Math', 'Programming Languages', 'OOP', 'Network and Security']
+		subjects: ['DSA', 'Database', 'Web Development', 'SWE', 'Machine Learning', 'Compiler', 'Concrete Math', 'Discrete Math', 'Programming Languages', 'OOP', 'Network and Security', 'CGPA(till now): 3.96/4.00']
 	},
 	{
 		degree: 'Higher Secondary School Certificate',
@@ -24,7 +24,7 @@ export const items: Array<Education> = [
 		period: { from: new Date(2017, 7, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Science']
+		subjects: ['Science', 'GPA: 5.00/5.00']
 	},
 	{
 		degree: 'Secondary School Certificate',
@@ -36,7 +36,7 @@ export const items: Array<Education> = [
 		period: { from: new Date(2009, 1, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Science']
+		subjects: ['Science', 'GPA: 5.00/5.00']
 	}
 
 ];
