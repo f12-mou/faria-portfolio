@@ -10,7 +10,7 @@ export const items: Array<Project> = [
 			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
 		shortDescription:
 			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
-		links: [{ to: 'https://github.com/f12-mou/pixelshare', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/f12-mou/pixelshare', label: 'GitHub' }, { to: 'https://pixelshare.site/login', label: 'Visit Website' }],
 		logo: Assets.Svelte,
 		name: 'PixelShare',
 		period: {
@@ -130,6 +130,40 @@ export const items: Array<Project> = [
 		},
 		skills: [],
 		type: 'Computer Security Sessional Project'
+	},
+	{
+		slug: 'slick-portfolio-mancala',
+		color: '#5e95e3',
+		description:
+			'Implemented a Mancala game player using Minimax with alpha-beta pruning, exploring strategies like iterative deepening and move-ordering. Designed and tested multiple heuristics, evaluating game states based on storage difference, additional moves, and captured stones to optimize gameplay.',
+		shortDescription:
+			'Implemented a Mancala game player using Minimax with alpha-beta pruning, exploring strategies like iterative deepening and move-ordering. Designed and tested multiple heuristics, evaluating game states based on storage difference, additional moves, and captured stones to optimize gameplay.',
+		links: [{ to: 'https://github.com/f12-mou/CSE-318_Artificial_Intelligence_Sessional/tree/main/Offline-2_Mancala_Adversarial_Search', label: 'GitHub' }],
+		logo: Assets.C,
+		name: 'Mancala',
+		period: {
+			from: new Date(2023, 7, 12),
+			to: new Date(2023, 7, 21)
+		},
+		skills: [],
+		type: 'CSE-318 Artificial Intelligence Project'
+	},
+	{
+		slug: 'slick-portfolio-N-puzzle',
+		color: '#5e95e3',
+		description:
+			'This project focuses on solving the N-Puzzle problem using A* search with Manhattan and Hamming distance heuristics. It determines solvability based on inversion counts and explores optimal solutions by minimizing the cost function. The project evaluates performance metrics like explored and expanded nodes and reconstructs the solution path to showcase step-by-step moves for each heuristic.',
+		shortDescription:
+			'This project focuses on solving the N-Puzzle problem using A* search with Manhattan and Hamming distance heuristics. It determines solvability based on inversion counts and explores optimal solutions by minimizing the cost function. The project evaluates performance metrics like explored and expanded nodes and reconstructs the solution path to showcase step-by-step moves for each heuristic.',
+		links: [{ to: 'https://github.com/f12-mou/CSE-318_Artificial_Intelligence_Sessional/blob/main/Offline-1_N_Puzzle/1905012.cpp', label: 'GitHub' }],
+		logo: Assets.C,
+		name: 'N-puzzle',
+		period: {
+			from: new Date(2023, 5, 5),
+			to: new Date(2023, 5, 18)
+		},
+		skills: [],
+		type: 'CSE-318 Artificial Intelligence Project'
 	},
 	{
 		slug: 'slick-portfolio-pacman',
