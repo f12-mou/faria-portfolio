@@ -71,7 +71,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
 		links: [{ to: 'https://github.com/f12-mou/CSE108-JavaFx_Football_Project', label: 'GitHub' }, { to: 'https://www.youtube.com/watch?v=VwsDiVtn1wg', label: 'Youtube' }],
-		logo: Assets.Unknown,
+		logo: Assets.JavaScript,
 		name: 'JavaFX Football Management System',
 		period: {
 			from: new Date(2022, 1, 5),
@@ -79,6 +79,23 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('js', 'css'),
 		type: 'Object Oriented Programming Sessional Project'
+	},
+	{
+		slug: 'slick-portfolio-angular',
+		color: '#5e95e3',
+		description:
+			'The project was under the course CSE 216: Database Sessional. It was based on the idea of detective agency where clients could request for a case to solve and the detectives could solve them according to client’s requests.From filing a case with necessary contents upto solving the case by detectives, the whole process was simulated in our project.',
+		shortDescription:
+			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
+		links: [{ to: 'https://github.com/f12-mou/Sherlock-s-Eye', label: 'GitHub' }],
+		logo: Assets.NodeJs,
+		name: 'Sherlock Eye',
+		period: {
+			from: new Date(2022, 5, 5),
+			to: new Date(2022, 5, 29)
+		},
+		skills: getSkills('js', 'css', 'html'),
+		type: 'Database Project'
 	}
 ];
 
