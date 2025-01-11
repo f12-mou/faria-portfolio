@@ -10,7 +10,7 @@ export const items: Array<Experience> = [
 		contract: ContractType.Ptype,
 		type: 'Software Development',
 		location: 'Daffodil International University, Dhaka',
-		period: { from: new Date(2024, 12, 5), to: new Date(2024, 12, 7) },
+		period: { from: new Date(2024, 11, 5), to: new Date(2024, 11, 7) },
 		skills: [],
 		name: 'ICPC Asia Dhaka Regional Contest 2024',
 		color: 'red',

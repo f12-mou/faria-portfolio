@@ -12,7 +12,7 @@
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}
-			<Chip>Ooops! no CV at the moment.</Chip>
+			<Chip>For details, reach me out!</Chip>
 		{/if}
 	</div>
 </CommonPage>

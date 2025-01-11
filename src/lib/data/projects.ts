@@ -14,7 +14,8 @@ export const items: Array<Project> = [
 		logo: Assets.Svelte,
 		name: 'PixelShare',
 		period: {
-			from: new Date()
+			from: new Date(2024, 1, 5),
+			to: new Date(2024, 2, 7)
 		},
 		skills: getSkills('svelte', 'ts', 'js', 'css'),
 		type: 'Level 4 Term I Software Development Project'
@@ -61,6 +62,23 @@ export const items: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+		slug: 'slick-portfolio-angular',
+		color: '#5e95e3',
+		description:
+			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
+		shortDescription:
+			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
+		links: [{ to: 'https://github.com/f12-mou/CSE108-JavaFx_Football_Project', label: 'GitHub' }, { to: 'https://www.youtube.com/watch?v=VwsDiVtn1wg', label: 'Youtube' }],
+		logo: Assets.Unknown,
+		name: 'JavaFX Football Management System',
+		period: {
+			from: new Date(2022, 1, 5),
+			to: new Date(2022, 2, 7)
+		},
+		skills: getSkills('js', 'css'),
+		type: 'Object Oriented Programming Sessional Project'
 	}
 ];
 
