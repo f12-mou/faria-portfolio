@@ -5,11 +5,11 @@ import { ContractType, type Experience } from '../types';
 export const items: Array<Experience> = [
 	{
 		slug: 'open-sourcer',
-		company: 'Self-employed',
+		company: '',
 		description: 'Rank - 24, Team Name - BUET_Harmonica',
-		contract: ContractType.SelfEmployed,
+		contract: ContractType.Ptype,
 		type: 'Software Development',
-		location: 'Home',
+		location: 'Daffodil International University, Dhaka',
 		period: { from: new Date() },
 		skills: [],
 		name: 'ICPC Asia Dhaka Regional Contest 2024',
