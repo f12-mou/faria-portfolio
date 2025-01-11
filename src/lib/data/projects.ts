@@ -166,6 +166,24 @@ export const items: Array<Project> = [
 		type: 'CSE-318 Artificial Intelligence Project'
 	},
 	{
+		slug: 'slick-portfolio-vending-machine',
+		color: '#5e95e3',
+		description:
+			'This project, completed as part of CSE-308 Software Engineering Sessional (Assignment-2), implements a vending machine system using the State Design Pattern. It models various states such as waiting for requests, collecting money, releasing products, and handling extra amounts or product shortages, ensuring robust state transitions and efficient functionality.',
+		shortDescription:
+			'This project, completed as part of CSE-308 Software Engineering Sessional (Assignment-2), implements a vending machine system using the State Design Pattern. It models various states such as waiting for requests, collecting money, releasing products, and handling extra amounts or product shortages, ensuring robust state transitions and efficient functionality.',
+
+		links: [{ to: 'https://github.com/f12-mou/CSE-308-Software_Engineering_Sessional/tree/main/Offline-2/1905012/Offline-3', label: 'GitHub' }],
+		logo: Assets.Java,
+		name: 'Vending Machine',
+		period: {
+			from: new Date(2022, 12, 20),
+			to: new Date(2022, 12, 8)
+		},
+		skills: [],
+		type: 'SWE Sessional Project'
+	},
+	{
 		slug: 'slick-portfolio-pacman',
 		color: '#5e95e3',
 		description:
