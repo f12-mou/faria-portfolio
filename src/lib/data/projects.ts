@@ -4,7 +4,7 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'slick-portfolio-pixelshare',
 		color: '#5e95e3',
 		description:
 			'Integrated OpenAI CLIP Model into PixelShare, an image sharing platform, to enable advanced text-based image search capabilities. This feature allows the users to retrieve images among their groups through descriptive queries.',
@@ -21,7 +21,7 @@ export const items: Array<Project> = [
 		type: 'Level 4 Term I Software Development Project'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'slick-portfolio-book-recommendation',
 		color: '#ff3e00',
 		description:
 			'This project is done under the course CSE 472 - Machine Learning  Sessional. We are developing a book recommendation system enhancing the Neural Graph Collaborative Filtering(NGCF) model with neighborhood-based contrastive learning and graph attention mechanism. The experiments are done on the Gowalla and Amazon book datasets to improve the metrics ndcg@k and recall@k.',
@@ -64,7 +64,7 @@ export const items: Array<Project> = [
 		]
 	},
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'slick-portfolio-javafx',
 		color: '#5e95e3',
 		description:
 			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
@@ -81,7 +81,7 @@ export const items: Array<Project> = [
 		type: 'Object Oriented Programming Sessional Project'
 	},
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'slick-portfolio-sherlock-eye',
 		color: '#5e95e3',
 		description:
 			'The project was under the course CSE 216: Database Sessional. It was based on the idea of detective agency where clients could request for a case to solve and the detectives could solve them according to client’s requests.From filing a case with necessary contents upto solving the case by detectives, the whole process was simulated in our project.',
@@ -98,7 +98,7 @@ export const items: Array<Project> = [
 		type: 'Database Project'
 	},
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'slick-portfolio-compiler',
 		color: '#5e95e3',
 		description:
 			'This project, completed as part of the CSE-310 Compiler Sessional course, demonstrates the construction of a compiler through a step-by-step approach. It includes implementing a symbol table for managing identifiers, designing a lexical analyzer using Lex to tokenize input, and building parsers using Yacc for syntax and semantic validation. Additionally, the project focuses on generating intermediate code to bridge the gap between high-level language and machine-level code. Written in a combination of Yacc, C, C++, Lex, and Assembly, the project showcases a deep understanding of compiler design principles, integrating various components to create a functional and efficient compiler.',
@@ -113,7 +113,42 @@ export const items: Array<Project> = [
 		},
 		skills: [],
 		type: 'Compiler Sessional Project'
+	},
+	{
+		slug: 'slick-portfolio-velociraptor-analysis',
+		color: '#5e95e3',
+		description:
+			'Velociraptor analysis was a part of the course - Security Sessional. Here we were given a digital forensic tool named velociraptor to examine. 2 custom artifacts were added and a pipeline was developed also for post - analysis of the results.',
+		shortDescription:
+			'Velociraptor analysis was a part of the course - Security Sessional. Here we were given a digital forensic tool named velociraptor to examine. 2 custom artifacts were added and a pipeline was developed also for post - analysis of the results.',
+		links: [{ to: 'https://github.com/f12-mou/velociraptor_analysis', label: 'GitHub' }],
+		logo: Assets.Python,
+		name: 'Velociraptor-Analysis',
+		period: {
+			from: new Date(2021, 8, 3),
+			to: new Date(2021, 8, 18)
+		},
+		skills: [],
+		type: 'Computer Security Sessional Project'
+	},
+	{
+		slug: 'slick-portfolio-pacman',
+		color: '#5e95e3',
+		description:
+			'Developed a custom version of the classic Pacman game during my first year.I added 14 different levels with different layouts of the maze and difficulties.I also integrated the unlock system and many attractive features into the custom version.',
+		shortDescription:
+			'Developed a custom version of the classic Pacman game during my first year.I added 14 different levels with different layouts of the maze and difficulties.I also integrated the unlock system and many attractive features into the custom version.',
+		links: [{ to: 'https://github.com/f12-mou/Pacman', label: 'GitHub' }, { to: 'https://youtu.be/Ph3G2gmhZis?si=wuXcHuT52dUQS35A', label: 'Youtube' }],
+		logo: Assets.C,
+		name: 'Pacman',
+		period: {
+			from: new Date(2020, 10, 20),
+			to: new Date(2020, 11, 23)
+		},
+		skills: [],
+		type: 'Level 1 Term I Igraphics Project'
 	}
+
 ];
 
 export const title = 'Projects';
