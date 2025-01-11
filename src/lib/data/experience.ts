@@ -5,7 +5,7 @@ import { ContractType, type Experience } from '../types';
 export const items: Array<Experience> = [
 	{
 		slug: 'open-sourcer',
-		company: '',
+		company: 'BUET_Harmonica',
 		description: 'Rank - 24, Team Name - BUET_Harmonica',
 		contract: ContractType.Ptype,
 		type: 'Software Development',
@@ -16,7 +16,7 @@ export const items: Array<Experience> = [
 		color: 'red',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: 'Rank - 24, Team Name - BUET_Harmonica'
+		shortDescription: 'Rank - 24'
 	},
 	{
 		slug: 'software-freelance',
