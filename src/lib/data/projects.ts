@@ -28,7 +28,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'This project is done under the course CSE 472 - Machine Learning  Sessional. We are developing a book recommendation system enhancing the Neural Graph Collaborative Filtering(NGCF) model with neighborhood-based contrastive learning and graph attention mechanism. The experiments are done on the Gowalla and Amazon book datasets to improve the metrics ndcg@k and recall@k.',
 		links: [{ to: 'https://github.com/f12-mou/CSE-472_Book_Recommendation_System', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.Python,
 		name: 'Book Recommendation System',
 		period: {
 			from: new Date(2024, 11, 20),
@@ -86,7 +86,7 @@ export const items: Array<Project> = [
 		description:
 			'The project was under the course CSE 216: Database Sessional. It was based on the idea of detective agency where clients could request for a case to solve and the detectives could solve them according to client’s requests.From filing a case with necessary contents upto solving the case by detectives, the whole process was simulated in our project.',
 		shortDescription:
-			'As part of the CSE 108 (Object-Oriented Programming) course, this project is a JavaFX-based football management system. It allows users to manage players across different clubs, facilitating buying, transferring, and updating player information. The program follows a server-client architecture where player data is stored on the server. Client requests trigger updates to these files, ensuring real-time synchronization of player information. This project demonstrates key object-oriented programming principles and incorporates JavaFX for a dynamic user interface.',
+			'The project was under the course CSE 216: Database Sessional. It was based on the idea of detective agency where clients could request for a case to solve and the detectives could solve them according to client’s requests.From filing a case with necessary contents upto solving the case by detectives, the whole process was simulated in our project.',
 		links: [{ to: 'https://github.com/f12-mou/Sherlock-s-Eye', label: 'GitHub' }],
 		logo: Assets.NodeJs,
 		name: 'Sherlock Eye',
@@ -96,6 +96,23 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('js', 'css', 'html'),
 		type: 'Database Project'
+	},
+	{
+		slug: 'slick-portfolio-angular',
+		color: '#5e95e3',
+		description:
+			'This project, completed as part of the CSE-310 Compiler Sessional course, demonstrates the construction of a compiler through a step-by-step approach. It includes implementing a symbol table for managing identifiers, designing a lexical analyzer using Lex to tokenize input, and building parsers using Yacc for syntax and semantic validation. Additionally, the project focuses on generating intermediate code to bridge the gap between high-level language and machine-level code. Written in a combination of Yacc, C, C++, Lex, and Assembly, the project showcases a deep understanding of compiler design principles, integrating various components to create a functional and efficient compiler.',
+		shortDescription:
+			'This project, completed as part of the CSE-310 Compiler Sessional course, demonstrates the construction of a compiler through a step-by-step approach. It includes implementing a symbol table for managing identifiers, designing a lexical analyzer using Lex to tokenize input, and building parsers using Yacc for syntax and semantic validation. Additionally, the project focuses on generating intermediate code to bridge the gap between high-level language and machine-level code. Written in a combination of Yacc, C, C++, Lex, and Assembly, the project showcases a deep understanding of compiler design principles, integrating various components to create a functional and efficient compiler.',
+		links: [{ to: 'https://github.com/f12-mou/CSE-310-Compiler_Sessional', label: 'GitHub' }],
+		logo: Assets.C,
+		name: 'Compiler',
+		period: {
+			from: new Date(2022, 11, 3),
+			to: new Date(2023, 1, 21)
+		},
+		skills: [],
+		type: 'Compiler Sessional Project'
 	}
 ];
 
