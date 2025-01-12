@@ -118,15 +118,6 @@ export const items = [
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
-	}),
-	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
 		description: '',

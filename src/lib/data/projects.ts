@@ -17,7 +17,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 1, 5),
 			to: new Date(2024, 2, 7)
 		},
-		skills: getSkills('svelte', 'ts', 'js', 'css'),
+		skills: getSkills('svelte', 'ts', 'js', 'css', 'html'),
 		type: 'Level 4 Term I Software Development Project'
 	},
 	{
@@ -34,7 +34,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 11, 20),
 			to: new Date(2024, 12, 20)
 		},
-		skills: [],
+		skills: getSkills('python'),
 		type: 'CSE 472 ML Project',
 		screenshots: [
 			{
@@ -94,7 +94,7 @@ export const items: Array<Project> = [
 			from: new Date(2022, 5, 5),
 			to: new Date(2022, 5, 29)
 		},
-		skills: getSkills('js', 'css', 'html'),
+		skills: getSkills('js', 'css', 'html', 'nodejs'),
 		type: 'Database Project'
 	},
 	{
@@ -111,7 +111,7 @@ export const items: Array<Project> = [
 			from: new Date(2022, 11, 3),
 			to: new Date(2023, 1, 21)
 		},
-		skills: [],
+		skills: getSkills('c', 'c++'),
 		type: 'Compiler Sessional Project'
 	},
 	{
@@ -128,7 +128,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 8, 3),
 			to: new Date(2021, 8, 18)
 		},
-		skills: [],
+		skills: getSkills('python'),
 		type: 'Computer Security Sessional Project'
 	},
 	{
@@ -145,7 +145,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 7, 12),
 			to: new Date(2023, 7, 21)
 		},
-		skills: [],
+		skills: getSkills('c++'),
 		type: 'CSE-318 Artificial Intelligence Project'
 	},
 	{
@@ -162,7 +162,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 5, 5),
 			to: new Date(2023, 5, 18)
 		},
-		skills: [],
+		skills: getSkills('c++'),
 		type: 'CSE-318 Artificial Intelligence Project'
 	},
 	{
@@ -180,7 +180,7 @@ export const items: Array<Project> = [
 			from: new Date(2022, 12, 20),
 			to: new Date(2022, 12, 8)
 		},
-		skills: [],
+		skills: getSkills('java'),
 		type: 'SWE Sessional Project'
 	},
 	{
@@ -197,7 +197,7 @@ export const items: Array<Project> = [
 			from: new Date(2020, 10, 20),
 			to: new Date(2020, 11, 23)
 		},
-		skills: [],
+		skills: getSkills('c'),
 		type: 'Level 1 Term I Igraphics Project'
 	}
 
