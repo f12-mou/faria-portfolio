@@ -20,6 +20,13 @@
 		{:else}
 			<Chip>For details, reach me out!</Chip>
 		{/if}
+
+		<h3>Preview of my CV:</h3>
+		<iframe
+			src="https://drive.google.com/file/d/1OAUnK5BKDAEIiJiDEetgcIvynLvYYa04/preview"
+			width="100%"
+			height="600px"
+		></iframe>
 	</div>
 </CommonPage>
 
