@@ -3,6 +3,9 @@
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+
+	const title = 'My Resume';
+	const data = '/Faria_CV.pdf'; // static path, not imported
 </script>
 
 <CommonPage {title}>
