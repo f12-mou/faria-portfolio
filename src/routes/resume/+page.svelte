@@ -1,17 +1,20 @@
 <script>
-	// import { data, title } from '@data/resume';
+	import { data, title } from '@data/resume';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
 
-	const title = 'My Resume';
-	const data = '/Faria_CV.pdf'; // static path, not imported
+	// const title = 'My Resume';
+	// const data = '/Faria_CV.pdf'; // static path, not imported
 </script>
 
 <CommonPage {title}>
 	<div class="resume">
 		{#if data}
-			<a href={data} download>
+			<a
+				href="https://drive.google.com/file/d/1OAUnK5BKDAEIiJiDEetgcIvynLvYYa04/view?usp=sharing"
+				download
+			>
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}
