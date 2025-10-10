@@ -8,7 +8,7 @@ export const name = 'Faria Binta';
 export const lastName = 'Awal';
 
 export const description =
-	'Hello! I’m a Level 4 Term II Computer Science and Engineering student at Bangladesh University of Engineering and Technology (BUET). My journey in computer science has been an incredible adventure filled with passion, learning, and growth. Along the way, I’ve actively participated in extracurricular activities such as competitive programming and hackathons. Each project and competition shown here reflects my enthusiasm for learning new things. Hope to learn more in future. Thanks for visiting my portfolio.';
+	'Hello! I’m Faria Binta Awal, a Lecturer in the Department of Computer Science and Engineering at BRAC University. I completed my B.Sc. in Computer Science and Engineering from Bangladesh University of Engineering and Technology (BUET), where I also served as an Adjunct Lecturer after graduation. I’m deeply passionate about research and teaching in computer science and am currently preparing to pursue a Ph.D. starting in Fall 2026.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/f12-mou' },
