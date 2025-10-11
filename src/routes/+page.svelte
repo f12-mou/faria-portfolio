@@ -44,16 +44,13 @@
 	<!-- <Carrousel items={skills ?? skillsItems} /> -->
 
 	<div class="mt-10 w-full flex justify-center">
-	<Carrousel
-		images={[
-			'/images/snip1.png',
-			'/images/snip2.png',
-			
-		]}
-		autoplay={true}
-		interval={3000}
-		showIndicators={true}
-		showArrows={true}
-		class="max-w-3xl rounded-2xl shadow-lg"
-	/>
+		<Carrousel
+			images={['/images/snip1.png', '/images/snip2.png']}
+			autoplay={true}
+			interval={3000}
+			showIndicators={true}
+			showArrows={true}
+			class="max-w-3xl rounded-2xl shadow-lg"
+		/>
+	</div>
 </div>
