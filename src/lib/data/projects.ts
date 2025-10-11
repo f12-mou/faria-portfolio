@@ -229,9 +229,9 @@ export const research: Array<Project> = [
 		slug: 'slick-portfolio-research-spatialomics-toolkit',
 		color: '#4a90e2',
 		description:
-			'Worked with Dr. Md. Abul Hassan Samee as a remote research engineer on literature review and development of a unified spatial transcriptomics pipeline using spatialdata. Addressed the challenge of standardizing workflows across heterogeneous technologies. The pipeline was later utilized in a Festival of Genomics and Biodata Boston 2025 workshop.',
+			'Worked with Dr. Md. Abul Hassan Samee to design and develop a spatial transcriptomics tutorial demonstrating analysis pipelines for MERFISH and Visium 2.1.0 datasets using the spatialdata toolkit. The tutorial established reproducible workflows for the bioinformatics research community and addressed the challenge of standardizing analyses across heterogeneous technologies. The pipeline was later used in live demonstrations at the “Workshop: Mastering Spatial Data Analysis: From Basics to Cutting-Edge Innovations” as part of the Festival of Genomics and Biodata Boston 2025.',
 		shortDescription:
-			'Spatial Transcriptomics Data Analysis Pipeline',
+			'Contributed to the development of a spatial transcriptomics tutorial and unified analysis pipeline using the spatialdata toolkit under Dr. Md. Abul Hassan Samee.',
 		links: [{ to: 'https://github.com/f12-mou/spatialomics-toolkit', label: 'GitHub' },
 		{ to: 'https://festivalofgenomics.com/boston/2025-agenda/mastering-spatial-data-analysis-basics-cutting-edge-innovations', label: 'Workshop Details' }
 		],
@@ -243,6 +243,24 @@ export const research: Array<Project> = [
 		},
 		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
 		type: 'Remote Research Project'
+	},
+
+	{
+		slug: 'slick-portfolio-cell',
+		color: '#4a90e2',
+		description:
+			'Worked with Dr. Md. Abul Hassan Samee to model spatially resolved cell–cell communication networks in axolotl regeneration datasets. Designed neighborhood-based matrices and heuristic strategies to efficiently infer multi-step ligand–receptor signaling cascades. Identified spatially coherent signaling chains and candidate hubs, providing insights into regeneration-associated pathways.',
+		shortDescription:
+			'Modeled spatially resolved cell–cell communication in axolotl regeneration datasets under Dr. Md. Abul Hassan Samee.',
+		links: [],
+		logo: Assets.Python,
+		name: 'Cell–Cell Communication Network Using Spatial Ligand–Receptor Correlation',
+		period: {
+			from: new Date(2025, 8, 15),
+			to: undefined
+		},
+		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
+		type: 'Ongoing Research Project'
 	}
 ];
 
