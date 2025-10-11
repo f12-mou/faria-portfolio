@@ -8,6 +8,9 @@ export function load({ params }: { params: Record<string, string> }) {
 			items.find((item) => item.slug === params.slug) ||
 			research.find((item) => item.slug === params.slug);
 
+		console.log(params);
+		console.log(project);
+
 		return { project };
 	}
 }
