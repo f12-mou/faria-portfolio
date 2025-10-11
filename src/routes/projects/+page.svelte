@@ -84,6 +84,7 @@
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
+		<h2 class="text-2xl font-semibold mt-6 mb-3">Academic Projects</h2>
 		<div class="projects-list mt-5">
 			{#each displayed as project}
 				<ProjectCard {project} />
