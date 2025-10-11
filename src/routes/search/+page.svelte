@@ -50,7 +50,7 @@
 				data,
 				icon: 'i-carbon-cube',
 				name: data.name,
-				to: `projects/${data.slug}`
+				to: `rprojects/${data.slug}`
 			}))
 		);
 
