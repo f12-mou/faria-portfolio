@@ -7,13 +7,13 @@
 	let current = 0;
 	let timer: NodeJS.Timeout;
 
-	if (autoplay) {
-		$: {
-			clearInterval(timer);
-			timer = setInterval(() => {
-				current = (current + 1) % images.length;
-			}, interval);
-		}
+	$: if (autoplay) {
+		clearInterval(timer);
+		timer = setInterval(() => {
+			current = (current + 1) % images.length;
+		}, interval);
+	} else {
+		clearInterval(timer);
 	}
 </script>
 
@@ -21,7 +21,7 @@
 	{#each images as img, i}
 		<img
 			src={img}
-			alt="Carousel image"
+			alt={`Slide ${i + 1}`}
 			class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700"
 			style="opacity: {i === current ? 1 : 0}"
 			in:fade
@@ -29,7 +29,6 @@
 		/>
 	{/each}
 
-	<!-- Navigation arrows -->
 	<button
 		on:click={() => (current = (current - 1 + images.length) % images.length)}
 		class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/40 text-white p-2 rounded-full"
