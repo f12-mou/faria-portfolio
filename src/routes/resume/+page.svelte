@@ -23,8 +23,8 @@
 
 		<iframe
 			src="https://drive.google.com/file/d/1OAUnK5BKDAEIiJiDEetgcIvynLvYYa04/preview"
-			width="170%"
-			height="600px"
+			width="190%"
+			height="1800px"
 		></iframe>
 	</div>
 </CommonPage>
