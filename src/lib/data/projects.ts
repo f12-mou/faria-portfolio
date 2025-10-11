@@ -206,40 +206,40 @@ export const items: Array<Project> = [
 
 export const research: Array<Project> = [
 	{
-		slug: 'research-nsf',
+		slug: 'research-sunstamp',
 		color: '#007acc',
 		description:
-			'Developed Non-negative Spatial Factorization (NSF) model for spatially-resolved gene expression analysis to identify plaque-related gene modules in Alzheimer’s disease.',
+			'We propose a supervised Non-negative Matrix Factorization (NMF) framework designed to integrate spatial transcriptomics with complementary molecular or imaging modalities. The project addresses a key gap in spatial omics by enabling joint modeling of gene expression and pathology-derived molecular features. It demonstrated strong predictive performance (AUC >= 0.90) in Alzheimer’s disease and high correlation with myocardial injury markers, revealing biologically interpretable spatial gene modules.',
 		shortDescription:
-			'Developed Non-negative Spatial Factorization (NSF) model for spatially-resolved gene expression analysis.',
+			'Supervised Factorization to Associate Spatial Transcriptomics with Complementary Molecular Readouts',
 		links: [
-			{ to: 'https://biorxiv.org/content/10.1101/2024.02.12.580245v1', label: 'bioRxiv' }
+			{ to: 'https://www.biorxiv.org/content/10.1101/2025.09.28.679034v1.abstract', label: 'bioRxiv' }
 		],
 		logo: Assets.Python,
-		name: 'Non-negative Spatial Factorization (NSF)',
+		name: 'SuNSTAMP',
 		period: {
-			from: new Date(2023, 10, 1),
-			to: new Date(2024, 3, 20)
+			from: new Date(2024, 2, 1),
+			to: new Date(2025, 3, 25)
 		},
 		skills: getSkills('python', 'numpy', 'pandas'),
-		type: 'Undergraduate Research Project'
+		type: 'Undergraduate Thesis (Research) Project'
 	},
 	{
-		slug: 'research-supernmfplus',
+		slug: 'research-spatialomics-toolkit',
 		color: '#4a90e2',
 		description:
-			'Designed SuperNMFPlus — a supervised non-negative matrix factorization framework incorporating an exponential plaque intensity distribution model for Alzheimer’s pathology characterization.',
+			'Worked with Dr. Md. Abul Hassan Samee as a remote research engineer on literature review and development of a unified spatial transcriptomics pipeline using spatialdata. Addressed the challenge of standardizing workflows across heterogeneous technologies. The pipeline was later utilized in a Festival of Genomics and Biodata Boston 2025 workshop.',
 		shortDescription:
-			'Designed SuperNMFPlus — a supervised NMF framework for Alzheimer’s pathology modeling.',
+			'Spatial Transcriptomics Data Analysis Pipeline',
 		links: [{ to: 'https://github.com/f12-mou/SuperNMFPlus', label: 'GitHub' }],
 		logo: Assets.Python,
-		name: 'SuperNMFPlus',
+		name: 'spatialomics-toolkit',
 		period: {
-			from: new Date(2024, 6, 1),
-			to: new Date(2025, 3, 10)
+			from: new Date(2025, 5, 15),
+			to: new Date(2025, 9, 15)
 		},
 		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
-		type: 'Thesis Project'
+		type: 'Remote Research Project'
 	}
 ];
 
