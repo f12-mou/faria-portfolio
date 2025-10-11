@@ -206,14 +206,15 @@ export const items: Array<Project> = [
 
 export const research: Array<Project> = [
 	{
-		slug: 'research-sunstamp',
+		slug: 'slick-portfolio-research-sunstamp',
 		color: '#007acc',
 		description:
 			'We propose a supervised Non-negative Matrix Factorization (NMF) framework designed to integrate spatial transcriptomics with complementary molecular or imaging modalities. The project addresses a key gap in spatial omics by enabling joint modeling of gene expression and pathology-derived molecular features. It demonstrated strong predictive performance (AUC >= 0.90) in Alzheimer’s disease and high correlation with myocardial injury markers, revealing biologically interpretable spatial gene modules.',
 		shortDescription:
 			'Supervised Factorization to Associate Spatial Transcriptomics with Complementary Molecular Readouts',
 		links: [
-			{ to: 'https://www.biorxiv.org/content/10.1101/2025.09.28.679034v1.abstract', label: 'bioRxiv' }
+			{ to: 'https://www.biorxiv.org/content/10.1101/2025.09.28.679034v1.abstract', label: 'bioRxiv' },
+			{ to: 'https://github.com/f12-mou/SuNSTAMP', label: 'Github' }
 		],
 		logo: Assets.Python,
 		name: 'SuNSTAMP',
@@ -225,13 +226,15 @@ export const research: Array<Project> = [
 		type: 'Undergraduate Thesis (Research) Project'
 	},
 	{
-		slug: 'research-spatialomics-toolkit',
+		slug: 'slick-portfolio-research-spatialomics-toolkit',
 		color: '#4a90e2',
 		description:
 			'Worked with Dr. Md. Abul Hassan Samee as a remote research engineer on literature review and development of a unified spatial transcriptomics pipeline using spatialdata. Addressed the challenge of standardizing workflows across heterogeneous technologies. The pipeline was later utilized in a Festival of Genomics and Biodata Boston 2025 workshop.',
 		shortDescription:
 			'Spatial Transcriptomics Data Analysis Pipeline',
-		links: [{ to: 'https://github.com/f12-mou/SuperNMFPlus', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/f12-mou/spatialomics-toolkit', label: 'GitHub' },
+		{ to: 'https://festivalofgenomics.com/boston/2025-agenda/mastering-spatial-data-analysis-basics-cutting-edge-innovations', label: 'Workshop Details' }
+		],
 		logo: Assets.Python,
 		name: 'spatialomics-toolkit',
 		period: {
