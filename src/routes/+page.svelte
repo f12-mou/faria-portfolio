@@ -41,5 +41,5 @@
 			{/each}
 		</div>
 	</div>
-	<Carrousel items={skills ?? skillsItems} />
+	<!-- <Carrousel items={skills ?? skillsItems} /> -->
 </div>
