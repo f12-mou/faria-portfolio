@@ -256,11 +256,29 @@ export const research: Array<Project> = [
 		logo: Assets.Python,
 		name: 'Cell–Cell Communication Network Using Spatial Ligand–Receptor Correlation',
 		period: {
-			from: new Date(2025, 8, 15),
+			from: new Date(2025, 7, 15),
 			to: undefined
 		},
 		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
 		type: 'Ongoing Research Project'
+	},
+
+	{
+		slug: 'slick-portfolio-ngcf',
+		color: '#4a90e2',
+		description:
+			'Working with Dr. Mohammad Saifur Rahman to develop an advanced recommendation framework by enhancing Neural Graph Collaborative Filtering(NGCF) with neighborhood - based contrastive learning and graph attention mechanisms. Evaluated on Gowalla and Amazon Books datasets, achieving improved performance in Normalized Discounted Cumulative Gain(NDCG@k) and Recall@k metrics.',
+		shortDescription:
+			'Working with Dr. Mohammad Saifur Rahman to develop an advanced recommendation framework by enhancing Neural Graph Collaborative Filtering(NGCF) with neighborhood - based contrastive learning and graph attention mechanisms.',
+		links: [],
+		logo: Assets.Python,
+		name: 'Graph-Based Contrastive Recommendation System',
+		period: {
+			from: new Date(2024, 11, 15),
+			to: undefined
+		},
+		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
+		type: 'Ongoing Research Project | Targeted Venue: NeurIPS Workshop'
 	}
 ];
 
