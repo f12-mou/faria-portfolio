@@ -203,4 +203,45 @@ export const items: Array<Project> = [
 
 ];
 
+
+export const research: Array<Project> = [
+	{
+		slug: 'research-nsf',
+		color: '#007acc',
+		description:
+			'Developed Non-negative Spatial Factorization (NSF) model for spatially-resolved gene expression analysis to identify plaque-related gene modules in Alzheimer’s disease.',
+		shortDescription:
+			'Developed Non-negative Spatial Factorization (NSF) model for spatially-resolved gene expression analysis.',
+		links: [
+			{ to: 'https://biorxiv.org/content/10.1101/2024.02.12.580245v1', label: 'bioRxiv' }
+		],
+		logo: Assets.Python,
+		name: 'Non-negative Spatial Factorization (NSF)',
+		period: {
+			from: new Date(2023, 10, 1),
+			to: new Date(2024, 3, 20)
+		},
+		skills: getSkills('python', 'numpy', 'pandas'),
+		type: 'Undergraduate Research Project'
+	},
+	{
+		slug: 'research-supernmfplus',
+		color: '#4a90e2',
+		description:
+			'Designed SuperNMFPlus — a supervised non-negative matrix factorization framework incorporating an exponential plaque intensity distribution model for Alzheimer’s pathology characterization.',
+		shortDescription:
+			'Designed SuperNMFPlus — a supervised NMF framework for Alzheimer’s pathology modeling.',
+		links: [{ to: 'https://github.com/f12-mou/SuperNMFPlus', label: 'GitHub' }],
+		logo: Assets.Python,
+		name: 'SuperNMFPlus',
+		period: {
+			from: new Date(2024, 6, 1),
+			to: new Date(2025, 3, 10)
+		},
+		skills: getSkills('python', 'scikit-learn', 'matplotlib'),
+		type: 'Thesis Project'
+	}
+];
+
+
 export const title = 'Projects';

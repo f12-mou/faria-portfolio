@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { items, title } from '@data/projects';
+	import { items, research, title } from '@data/projects';
 	import * as skills from '@data/skills';
 	import { onMount } from 'svelte';
 
@@ -15,11 +15,15 @@
 	}
 
 	let filters: Array<SkillFilter> = skills.items.filter((it) => {
-		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
+		return (
+			items.some((project) => project.skills.some((skill) => skill.slug === it.slug)) ||
+			research.some((project) => project.skills.some((skill) => skill.slug === it.slug))
+		);
 	});
 
 	let search = '';
 	let displayed: Array<Project> = [];
+	let displayedResearch: Array<Project> = [];
 
 	const isSelected = (slug: string): boolean => {
 		return filters.some((item) => item.slug === slug && item.isSelected);
@@ -30,25 +34,29 @@
 			if (tech.slug === slug) {
 				tech.isSelected = !isSelected(slug);
 			}
-
 			return tech;
 		});
 	};
 
+	// reactive filtering for both academic and research projects
 	$: {
-		displayed = items.filter((project) => {
-			const isFiltered =
-				filters.every((item) => !item.isSelected) ||
-				project.skills.some((tech) =>
-					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
-				);
+		const filterProjects = (list: Array<Project>) =>
+			list.filter((project) => {
+				const isFiltered =
+					filters.every((item) => !item.isSelected) ||
+					project.skills.some((tech) =>
+						filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
+					);
 
-			const isSearched =
-				search.trim().length === 0 ||
-				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
+				const isSearched =
+					search.trim().length === 0 ||
+					project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
 
-			return isFiltered && isSearched;
-		});
+				return isFiltered && isSearched;
+			});
+
+		displayed = filterProjects(items);
+		displayedResearch = filterProjects(research);
 	}
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
@@ -57,15 +65,10 @@
 
 	onMount(() => {
 		const query = location.search;
-
 		if (query) {
 			const queryParams = new URLSearchParams(location.search);
-
 			const item = queryParams.get('item');
-
-			if (item) {
-				search = item;
-			}
+			if (item) search = item;
 		}
 	});
 </script>
@@ -73,27 +76,49 @@
 <SearchPage {title} on:search={onSearch}>
 	<div class="projects-filters">
 		{#each filters as tech}
-			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
+			<Chip active={tech.isSelected} classes="text-0.8em" on:click={() => onSelected(tech.slug)}
 				>{tech.name}</Chip
 			>
 		{/each}
 	</div>
-	{#if displayed.length === 0}
+
+	{#if displayed.length === 0 && displayedResearch.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
 			<UIcon icon="i-carbon-cube" classes="text-3.5em" />
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
-		<h2 class="text-2xl font-semibold mt-6 mb-3">Academic Projects</h2>
-		<div class="projects-list mt-5">
-			{#each displayed as project}
-				<ProjectCard {project} />
-			{/each}
-		</div>
+		<!-- Research Projects -->
+		{#if displayedResearch.length > 0}
+			<h2 class="section-title">Research Projects</h2>
+			<div class="projects-list mt-5">
+				{#each displayedResearch as project}
+					<ProjectCard {project} />
+				{/each}
+			</div>
+		{/if}
+
+		<!-- Academic Projects -->
+		{#if displayed.length > 0}
+			<h2 class="section-title">Academic Projects</h2>
+			<div class="projects-list mt-5">
+				{#each displayed as project}
+					<ProjectCard {project} />
+				{/each}
+			</div>
+		{/if}
 	{/if}
 </SearchPage>
 
 <style lang="scss">
+	.section-title {
+		font-size: 1.5rem; /* same as text-2xl */
+		font-weight: 600;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+		color: var(--accent-text);
+	}
+
 	.projects-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
