@@ -5,6 +5,7 @@
 	import { base } from '$app/paths';
 	import * as experiences from '@data/experience';
 	import * as projects from '@data/projects';
+	import * as rprojects from '@data/rprojects';
 	import * as skills from '@data/skills';
 
 	import type { Icon, Item, Skill } from '$lib/types';
@@ -37,6 +38,15 @@
 		// filter
 		result.push(
 			...filterItemsByQuery(projects.items, query).map<SearchResultItem>((data) => ({
+				data,
+				icon: 'i-carbon-cube',
+				name: data.name,
+				to: `projects/${data.slug}`
+			}))
+		);
+
+		result.push(
+			...filterItemsByQuery(rprojects.items, query).map<SearchResultItem>((data) => ({
 				data,
 				icon: 'i-carbon-cube',
 				name: data.name,
