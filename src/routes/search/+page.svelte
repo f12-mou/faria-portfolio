@@ -45,14 +45,14 @@
 			}))
 		);
 
-		result.push(
-			...filterItemsByQuery(rprojects.items, query).map<SearchResultItem>((data) => ({
-				data,
-				icon: 'i-carbon-cube',
-				name: data.name,
-				to: `rprojects/${data.slug}`
-			}))
-		);
+		// result.push(
+		// 	...filterItemsByQuery(rprojects.items, query).map<SearchResultItem>((data) => ({
+		// 		data,
+		// 		icon: 'i-carbon-cube',
+		// 		name: data.name,
+		// 		to: `rprojects/${data.slug}`
+		// 	}))
+		// );
 
 		// // Research projects
 		// result.push(
