@@ -44,6 +44,16 @@
 			}))
 		);
 
+		// Research projects
+		result.push(
+			...filterItemsByQuery(projects.research, query).map<SearchResultItem>((data) => ({
+				data,
+				icon: 'i-carbon-research', // optional different icon
+				name: data.name,
+				to: `projects/${data.slug}`
+			}))
+		);
+
 		result.push(
 			...filterItemsByQuery(
 				skills.items as unknown as Array<ItemOrSkill>,
