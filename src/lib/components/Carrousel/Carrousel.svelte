@@ -1,22 +1,32 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { Skill } from '$lib/types';
-	import { getAssetURL } from '$lib/data/assets';
 	import UIcon from '../Icon/UIcon.svelte';
 
-	export let items: Array<Skill> = [];
-	const delay = 2000;
+	// Import your 4 snippet images
+	import snip1 from '$lib/assets/snips/snip1.png';
+	import snip2 from '$lib/assets/snips/snip2.png';
+	// import snip3 from '$lib/assets/snips/snip3.jpg';
+	// import snip4 from '$lib/assets/snips/snip4.jpg';
 
+	// Create carousel items
+	export let items = [
+		{ logo: snip1, name: 'Snippet 1' },
+		{ logo: snip2, name: 'Snippet 2' }
+		// { logo: snip3, name: 'Snippet 3' },
+		// { logo: snip4, name: 'Snippet 4' }
+	];
+
+	const delay = 2500; // autoplay delay in ms
 	let element: HTMLElement;
-
 	let timeout: unknown;
 	let index = 0;
 	let toRight = true;
 
+	// reactive scroll
 	$: {
 		if (element) {
 			element.scroll({
-				left: index * 150,
+				left: index * 220, // scroll width of each item
 				behavior: 'smooth'
 			});
 		}
@@ -25,16 +35,16 @@
 	const slide = (right: boolean) => {
 		if (right) {
 			if (index < items.length - 1) {
-				index = index + 1;
+				index += 1;
 			} else {
-				index = index - 1;
+				index -= 1;
 				toRight = false;
 			}
 		} else {
 			if (index > 0) {
-				index = index - 1;
+				index -= 1;
 			} else {
-				index = index + 1;
+				index += 1;
 				toRight = true;
 			}
 		}
@@ -42,10 +52,8 @@
 
 	const toggle = (right: boolean) => {
 		clearTimeout(timeout as number);
-
 		timeout = setTimeout(() => {
 			slide(right);
-
 			toggle(toRight);
 		}, delay);
 	};
@@ -69,33 +77,75 @@
 	});
 </script>
 
-<div class="carrousel flex-[0.5] row-center">
-	<button
-		class="row-center font-500 p-5px m-y-0px m-x-10px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
-		on:click={toggleLeft}
-		on:keyup
-		on:keydown
-		on:keypress
-	>
+<div class="carousel-container">
+	<!-- Left Button -->
+	<button class="button" on:click={toggleLeft}>
 		<UIcon icon="i-carbon-chevron-left" />
 	</button>
 
-	<div bind:this={element} class="row overflow-hidden box-content w-150px">
+	<!-- Carousel Items -->
+	<div bind:this={element} class="carousel-inner">
 		{#each items as item}
-			<div class="box-content w-150px p-15px col-center">
-				<img class="w-120px h-120px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
-				<span class="text-center m-t-20px">{item.name}</span>
+			<div class="carousel-item">
+				<img src={item.logo} alt={item.name} />
+				<span>{item.name}</span>
 			</div>
 		{/each}
 	</div>
 
-	<button
-		class="row-center font-500 p-5px m-y-0px m-x-10px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
-		on:click={toggleRight}
-		on:keyup
-		on:keydown
-		on:keypress
-	>
+	<!-- Right Button -->
+	<button class="button" on:click={toggleRight}>
 		<UIcon icon="i-carbon-chevron-right" />
 	</button>
 </div>
+
+<style lang="scss">
+	.carousel-container {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.carousel-inner {
+		display: flex;
+		overflow: hidden;
+		width: 900px; /* width of the visible carousel */
+	}
+
+	.carousel-item {
+		min-width: 200px;
+		margin: 0 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.carousel-item img {
+		width: 180px;
+		height: 180px;
+		object-fit: cover;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+		transition: transform 0.2s;
+	}
+
+	.carousel-item img:hover {
+		transform: scale(1.05);
+	}
+
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid var(--border);
+		background: transparent;
+		cursor: pointer;
+	}
+
+	.button:hover {
+		border-color: var(--border-hover);
+	}
+</style>
