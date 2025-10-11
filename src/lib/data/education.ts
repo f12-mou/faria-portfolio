@@ -33,11 +33,12 @@ export const items: Array<Education> = [
 		logo: Assets.Unknown,
 		name: '',
 		organization: 'S. K. Govt. Girls High School, Manikganj',
-		period: { from: new Date(2009, 1, 1), , to: new Date(2017, 5, 10)
-	},
-	shortDescription: '',
-	slug: 'dummy-education-item-2',
-	subjects: ['Science', 'GPA: 5.00/5.00']
+		period: {
+			from: new Date(2009, 1, 1), to: new Date(2017, 5, 10)
+		},
+		shortDescription: '',
+		slug: 'dummy-education-item-2',
+		subjects: ['Science', 'GPA: 5.00/5.00']
 	}
 
 ];
