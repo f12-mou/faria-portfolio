@@ -13,25 +13,9 @@ export const description =
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/f12-mou' },
 	{
-		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/in/faria-mou-26225b342/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
 		platform: Platform.Email,
-		link: 'fariaWRITEINDIGITSONETWOmou@gmail.youknowwhat'
+		link: 'faria12mou@gmail.com'
 	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com/@user-hw7ut9ct6u'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com/faria_mou_but_mail_me_if_you_want_to_contact'
-	}
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
